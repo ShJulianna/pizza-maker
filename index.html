@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Pizza</title>
+</head>
+<body>
+    <main>
+        <div id="mainBlock">
+            <div id="orderViewingArea">
+                <div id="order">
+                    <p>Ваш заказ:</p>
+                    <ul id="orderList"></ul>
+                </div>
+                <div id="price">
+                    <p>Цена:</p>
+                </div>
+            </div>
+            <div id="imgPizza">
+                <div id="img">
+                    <img src="images/0.png" alt="pizza">
+                </div>
+                <button id="button">заказать</button>
+            </div>
+        </div>
+        <div id="ingredients">
+            
+            <ul class="ingredients" id="dough"> Основа для пиццы:
+                <li class="dough" data-price='2'>очень тонкая</li>
+                <li class="dough"data-price='3'>тонкая</li>
+                <li class="dough"data-price='4'>средняя</li>
+                <li class="dough"data-price='5'>толстая</li>
+            </ul>
+        
+            <ul class="ingredients" id="meat"> Мясные ингридиенты:
+                <li class="meat" data-price='16'>ветчина</li>
+                <li class="meat" data-price='17'>бекон</li>
+                <li class="meat" data-price='19'>сосиски</li>
+                <li class="meat" data-price='18'>говядина</li>
+            </ul>
+        
+            <ul class="ingredients" id="veges"> Дополнительные ингридиенты:
+                <li class="veges" data-price='6'>томаты</li>
+                <li class="veges" data-price='8'>перец</li>
+                <li class="veges" data-price='6'>шампиньоны</li>
+                <li class="veges" data-price='7'>оливки</li>
+            </ul>
+        
+            <ul class="ingredients" id="sause"> Соус:
+                <li class="sause" data-price='2'>сырный</li>
+                <li class="sause" data-price='1'>горчичный</li>
+                <li class="sause" data-price='2'>кетчуп</li>
+                <li class="sause" data-price='1'>майонез</li>
+            </ul>
+        
+        </div>
+    </main>
+
+
+    <script src="scripts/main.js" type="module"></script>
+</body>
+</html>

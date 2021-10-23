@@ -1,0 +1,216 @@
+* {
+    margin: 10px;
+    box-sizing: border-box;
+    color: #fff;
+}
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+main {
+    background: url('/images/background.jpg') left 0 top 0/cover no-repeat;
+    border-radius: 30px;
+    box-shadow: 25px 25px 10px 0 black;
+}
+div#mainBlock {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#order > p {
+    margin: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(248, 248, 248);
+    text-shadow: 5px 5px 2px rgb(109, 101, 101);
+}
+div#imgPizza{
+    display: grid;
+    grid-template-rows: 80% 20%;
+    min-height: 500px;
+    width: 45%;
+}
+img {
+    max-width: 400px;
+}
+
+div#orderViewingArea {
+    display: grid;
+    grid-template-rows: 80% 20%;
+    min-height: 500px;
+    width: 50%;
+}
+
+div#ingredients {
+    grid-area: ingredients;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+div#ingredients > ul {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin-left: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(255, 217, 0);
+    cursor: pointer;
+}
+div#ingredients li:hover {
+    font-style: italic;
+    color: rgb(204, 201, 181);
+}
+div#price > p {
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(151, 1, 1);
+    text-shadow: 5px 5px 2px rgb(2, 0, 0);
+}
+
+div#price > p.resultPrice {
+    margin-left: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(196, 174, 174);
+    border-radius: 20px;
+    background-color: rgb(151,1,1);
+    width: 100px;
+    text-align: center;
+}
+
+
+
+#button {
+    background-color: rgb(236, 67, 67);
+    color: #fff;
+    border: 1px solid rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    padding: 10px;
+    margin: auto 30%;
+    font-size: 25px;
+    text-shadow: 3px 3px 0 rgba(196, 169, 169, 0.651);
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.choosed {
+    color:rgba(206, 193, 81, 0.685);
+    font-size: 22px;
+    font-style: italic;
+}
+
+#orderList {
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 4px 4px 2px rgb(109, 101, 101);
+    cursor: pointer;
+}
+
+
+
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(14, 13, 22, 0.3);
+    min-width: 300px;
+    min-height: 300px;
+    font-family: 'segoe ui', sans-serif;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.modal p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.modal button {
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgba(255, 228, 181, 0.795);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    width: 200px;
+    display: block;
+    margin: 10px auto;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #1d1d1d;
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.3);
+}
+
+.modal button:hover {
+    background-color:khaki;
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    img {
+        max-width: 350px;
+    }
+    div#ingredients  ul {
+        font-size: 20px;
+        padding: 15px;
+    }
+    .choosed {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    div#mainBlock {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    img {
+        
+        max-width: 200px;
+    }
+    div#order > p {
+        font-size: 30px;
+    }
+    div#ingredients {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    div#ingredients  ul {
+        font-size: 15px;
+        padding: 5px;
+    }
+    div#price > p {
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    div#price > p.resultPrice {
+        margin-left: 30px;
+        font-size: 25px;
+    }
+    .choosed {
+        font-size: 18px;
+    }
+    .modal {
+        min-width: 150px;
+        min-height: 150px;
+    }
+    .modal p {
+        font-size: 20px;
+    }
+    #button {
+        font-size: 15px;
+    }
+}
+
